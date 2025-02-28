@@ -7,12 +7,12 @@ terraform {
 
   }
   backend "s3" {
-    bucket         = "myvjbuck123"
+    bucket         = "vjs3bucket123"
     key            = "env/dev/terraform.tfstate"
     region = "us-east-1"
     acl = "bucket-owner-full-control"
     encrypt        = true
-    dynamodb_table = "terraform-state-lock"
+    dynamodb_table = "vjdynamodb"
 
   }
 
